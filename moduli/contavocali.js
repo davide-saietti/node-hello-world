@@ -1,9 +1,9 @@
 function contavocali(word){
-    const vocali = 'aeiou'
+    const vocali = 'aeiouAEIOU'
     let count = 0
     
-    for(let i = 0; i <= word.length; i++){
-        if(word.includes(vocali[i])){
+    for(let i = 0; i < word.length; i++){
+        if(vocali.includes(word[i])){
         count++
         }
     }
